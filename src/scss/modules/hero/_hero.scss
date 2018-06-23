@@ -1,0 +1,102 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 70px;
+  padding-bottom: 0;
+
+  @media (min-width: $mobile) {
+    padding-top: 57px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 77px;
+  }
+
+  &::after {
+    @include absolute;
+    z-index: -1;
+    background-image: linear-gradient(
+      rgba($black-pearl, 0%) 0%,
+      rgba($black-pearl, 0%) 50%,
+      rgba($black-pearl, 100%) 100%
+    );
+    content: "";
+  }
+}
+
+.hero__image {
+  @include absolute;
+  z-index: -1;
+  overflow: hidden;
+  padding-left: 100%;
+  background: center 35px / cover no-repeat;
+}
+
+.hero__container {
+  @include container;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @media (min-width: $mobile) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 60px;
+  }
+}
+
+.hero__logo {
+  flex-basis: 100%;
+
+  .hero-logo {
+    width: 80%;
+    padding-top: 80%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $mobile) {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+
+    .hero-logo {
+      width: 50%;
+      padding-top: 50%;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    .hero-logo {
+      width: 40%;
+      padding-top: 40%;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .hero-logo {
+      width: 50%;
+      padding-top: 50%;
+    }
+  }
+}
+
+.hero__menu {
+  flex-basis: 100%;
+  padding: 0 10px;
+
+  @media (min-width: $mobile) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+}

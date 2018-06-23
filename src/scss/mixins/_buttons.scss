@@ -1,0 +1,34 @@
+@mixin button() {
+  @include rem(font-size, 10);
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.15;
+  padding: 10px;
+  border: 0;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  border-radius: 20px;
+  background: none;
+
+  &[href] {
+    text-decoration: none;
+  }
+
+  @media (min-width: $tablet) {
+    @include rem(font-size, 14);
+    letter-spacing: 3px;
+    padding: 10px 35px;
+  }
+}
+
+@mixin button-primary() {
+  @include button;
+  color: $black;
+  background: $gorse;
+
+  &:hover {
+    background: darken($gorse, 20);
+  }
+}

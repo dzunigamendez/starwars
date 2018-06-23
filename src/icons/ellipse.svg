@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 521 521">
+  <defs>
+    <style>
+      .ellipse {
+        fill: #231f20;
+        fill-opacity: 0;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        opacity: 0.5;
+        stroke: url(#linear);
+      }
+    </style>
+    <linearGradient id="linear" x1="260.5" y1="520.5" x2="260.5" y2="0.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <circle class="ellipse" cx="260.5" cy="260.5" r="260"/>
+</svg>

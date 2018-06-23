@@ -1,0 +1,18 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "transform-flow-strip-types",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "icons": "./src/icons",
+          "images": "./src/images",
+          "modules": "./src/modules",
+          "components": "./src/components",
+          "scss": "./src/scss"
+        }
+      }
+    ]
+  ]
+}

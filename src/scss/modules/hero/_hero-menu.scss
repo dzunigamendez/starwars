@@ -1,0 +1,69 @@
+.hero-menu {
+  @media (min-width: $mobile) {
+    max-width: 300px;
+    margin: 0 50px 0 0;
+    padding-right: 30px;
+  }
+}
+
+.hero-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $mobile) {
+    text-align: right;
+  }
+}
+
+.hero-menu__item {
+  flex: 1 50%;
+
+  @media (min-width: $mobile) {
+    flex: 1 100%;
+
+    & + & {
+      margin-top: 15px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    & + & {
+      margin-top: 30px;
+    }
+  }
+}
+
+.hero-menu__link {
+  @include rem(font-size, 13);
+  display: block;
+  margin: 5px;
+  padding: 15px 5px;
+  color: rgba($white, 0.75);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 5px;
+  background: rgba($white, 0.15);
+
+  @media (min-width: $mobile) {
+    @include rem(font-size, 10);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+    transition: all 0.2s;
+    transform-origin: 100%;
+
+    &:hover {
+      color: $white;
+      transform: scale(1.5);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    @include rem(font-size, 13);
+  }
+}

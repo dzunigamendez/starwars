@@ -1,0 +1,8 @@
+.cta {
+  text-align: right;
+  flex: 1;
+}
+
+.cta__link {
+  @include button-primary;
+}

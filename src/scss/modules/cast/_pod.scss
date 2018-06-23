@@ -1,0 +1,25 @@
+.pod {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.pod__image {
+  .ellipse-image__image {
+    width: 60%;
+  }
+}
+
+.pod__name {
+  @include rem(font-size, 13);
+  margin: 10px 0;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.pod__character {
+  @include rem(font-size, 10);
+  margin: 10px 0;
+  color: $white;
+  text-transform: uppercase;
+}

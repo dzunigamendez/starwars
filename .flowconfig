@@ -1,0 +1,12 @@
+[ignore]
+.*/node_modules/*
+
+[include]
+
+[libs]
+types/
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=./src
+module.name_mapper='^\(.+\.\(svg\|png\|gif\|jpg\|webp\)\)\?\(url\|original\|include\|inline\|webp\|sprite\)$' -> '\1'

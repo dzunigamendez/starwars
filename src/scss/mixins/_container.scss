@@ -1,0 +1,7 @@
+@mixin container() {
+  margin: 0 auto;
+
+  @media screen and (min-width: $hd) {
+    width: $hd - 200px;
+  }
+}

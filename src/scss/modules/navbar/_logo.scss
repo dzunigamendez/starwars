@@ -1,0 +1,16 @@
+.logo {
+  display: inline-block;
+  text-align: center;
+  flex: 1;
+}
+
+.logo__image {
+  width: 125px;
+  height: 15px;
+  fill: $white;
+
+  @media (min-width: $tablet) {
+    width: 242px;
+    height: 34px;
+  }
+}

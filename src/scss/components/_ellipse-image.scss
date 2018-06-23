@@ -1,0 +1,63 @@
+.ellipse-image {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.ellipse-image__ellipse {
+  @include absolute;
+}
+
+.ellipse-image__ellipse--inner {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  transform: rotate(-180deg);
+}
+
+.ellipse-image__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.ellipse-image__animation {
+
+  &:hover {
+    ~ .ellipse-image__ellipse--outer {
+      animation: ellipse-rotate 2s linear infinite;
+    }
+
+    ~ .ellipse-image__ellipse--inner {
+      animation: ellipse-rotate-inner 2s linear infinite;
+    }
+  }
+}
+
+@keyframes ellipse-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes ellipse-rotate-inner {
+  from {
+    transform: rotate(-180deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-180deg);
+  }
+}

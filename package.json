@@ -1,0 +1,37 @@
+{
+  "name": "justdz",
+  "version": "1.0.0",
+  "description": "What I have collected in the course of my journey so far!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build",
+    "flow": "flow"
+  },
+  "keywords": [
+    "Html",
+    "Javascript",
+    "CSS"
+  ],
+  "author": "diego.zuniga.mendez@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^6.0.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "swiper": "^4.3.3"
+  },
+  "devDependencies": {
+    "@zeit/next-sass": "^0.2.0",
+    "autoprefixer": "^8.6.2",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "flow-bin": "^0.74.0",
+    "next-compose-plugins": "^2.1.1",
+    "next-optimized-images": "^1.4.1",
+    "node-sass": "^4.9.0",
+    "node-sass-glob-importer": "^5.1.3"
+  }
+}

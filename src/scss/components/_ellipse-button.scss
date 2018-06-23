@@ -1,0 +1,43 @@
+.ellipse-button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+
+  &:hover {
+    .ellipse-button__ellipse--outer {
+      animation: ellipse-rotate 0.5s linear;
+    }
+
+    .ellipse-button__ellipse--inner {
+      animation: ellipse-rotate-inner 0.5s linear;
+    }
+  }
+}
+
+.ellipse-button__ellipse {
+  @include absolute;
+}
+
+.ellipse-button__ellipse--inner {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  transform: rotate(-180deg);
+}
+
+.ellipse-button__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+  fill: $white;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
