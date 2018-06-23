@@ -25,9 +25,7 @@
     "next": "^6.0.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "swiper": "^4.3.3"
-  },
-  "devDependencies": {
+    "swiper": "^4.3.3",
     "@zeit/next-sass": "^0.2.0",
     "autoprefixer": "^8.6.2",
     "babel-plugin-module-resolver": "^3.1.1",
