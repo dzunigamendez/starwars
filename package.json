@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "What I have collected in the course of my journey so far!",
   "main": "index.js",
-  "engine": {
+  "engines": {
     "node": "10.4.0",
     "npm": "6.1.0"
   },
